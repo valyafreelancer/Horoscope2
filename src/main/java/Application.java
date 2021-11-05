@@ -4,7 +4,7 @@ public class Application {
     public static void main(String[] args) {
         double x;
         double y;
-        String operation;
+        String action = args [1];
 
         Scanner input = new Scanner(System.in);
 
@@ -17,19 +17,19 @@ public class Application {
         Scanner op = new Scanner(System.in);
 
         System.out.println("Введите операцию");
-        operation = op.next();
+        args [1] = op.next();
 
-        if (operation.equals("+")) { // сложение
+        if (args [1].equals("+")) { // сложение
             System.out.println("Ответ: " + (x + y));
-        } else if (operation.equals("-")) { // вычетание
+        } else if (args [1].equals("-")) { // вычетание
             System.out.println("Ответ: " + (x - y));
-        } else if (operation.equals("/")) { //деление
+        } else if (args [1].equals("/")) { //деление
             System.out.println("Ответ " + (x/ y));
-        } else if (operation.equals("*")) { // умножение
+        } else if (args [1].equals("*")) { // умножение
             System.out.println("Ответ: " + (x * y));
-        } else if (operation.equals("%")) { // процент от числа
+        } else if (args [1].equals("%")) { // процент от числа
             System.out.println("Ответ: " + (x % y));
-        } else if (operation.equals("^")) { // возведение в степень
+        } else if (args [1].equals("^")) { // возведение в степень
             System.out.println(Math.pow(x,y));
 
         }
