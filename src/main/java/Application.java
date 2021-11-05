@@ -2,17 +2,16 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        double x;
-        double y;
-        String action = args [0];
-
         Scanner input = new Scanner(System.in);
 
         System.out.println("Введите первое число");
-        x = input.nextInt();
+        double x= input.nextDouble();
 
         System.out.println("Введите второе число");
-        y = input.nextInt();
+        double y= input.nextDouble();
+
+        String action = args [0];
+
 
         Scanner op = new Scanner(System.in);
 
