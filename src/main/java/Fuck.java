@@ -4,7 +4,7 @@ import java.util.Scanner;
 //В строку аргумента знак зодиака вводить на русском с заглавной буквы.
 
 public class Fuck {
-    public static void main(String[] args) {
+    public static void unit(String[] args) {
         Scanner input = new Scanner(System.in);
         Random rand = new Random();
 
