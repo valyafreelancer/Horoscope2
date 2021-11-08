@@ -10,7 +10,8 @@ public class Fuck {
 
         System.out.println("Введите знак зодиака");
         int b = input.nextInt();
-        int a = (int) (Math.random()*2);
+
+        int a = rand.nextInt(2);
 
         runForExample(args);
 
@@ -26,10 +27,8 @@ public class Fuck {
         }
     }
 
-    public static void runIfExample (String[] Random) {
-        switch (Random) {
-            Random random = new Random();
-            int a = random.nextInt(2);
+    public static void runIfExample (String[] random) {
+        switch (random) {
             case "Овен":
                 if (a == 0)
                     System.out.println("Ответ: Вас ждет улучшение взаимоотношений с любимым человеком!");
