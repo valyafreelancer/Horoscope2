@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Scanner op = new Scanner(System.in);
 
         System.out.println("Введите первое число");
         double x = input.nextDouble();
@@ -35,9 +34,9 @@ public class Application {
                 System.out.println("Ответ: " + (x % y));
                 break;
             case "^":
-                System.out.println("Ответ: " + Math.pow(x,y));
+                System.out.println("Ответ: " + Math.pow(x, y));
                 break;
-            case "":
+            default:
                 System.out.println("Ошибка!");
                 break;
 
@@ -45,4 +44,4 @@ public class Application {
         }
     }
 
-    }
+}
